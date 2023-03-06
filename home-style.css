@@ -1,0 +1,54 @@
+/*General Styles*/
+* {
+    display: flex;
+}
+body {
+    background-color: black;
+    color: aliceblue;
+}
+.menu {
+    flex-direction: column;
+    position: fixed;
+    margin-top: -1%;
+    left: 0%;
+    width: 10%;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    left: 0%;
+    overflow: hidden;
+}
+#bookSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px 30px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 90%;
+    height: 100vh;
+    /*overflow: hidden;*/
+}
+
+/*Specific Styles*/
+.menu ul {
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 100px;
+}
+.book {
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin: 40px;
+    padding: 40px;
+}
+.book img {
+    width: 70%;
+    height: 80%;
+}
+
+/*Effects*/
+.menu ul li:hover {
+    border-bottom: 2px solid white;
+    list-style: none;
+    text-decoration: none;
+}

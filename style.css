@@ -1,54 +1,220 @@
-/*General Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
-    display: flex;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
 body {
-    background-color: black;
-    color: aliceblue;
-}
-.menu {
-    flex-direction: column;
-    position: fixed;
-    margin-top: -1%;
-    left: 0%;
-    width: 10%;
-    height: 100vh;
-    align-content: center;
-    justify-content: center;
-    left: 0%;
+    background-color: #0c0c0c;
     overflow: hidden;
 }
-#bookSection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 200px 30px;
-    grid-auto-rows: minmax(100px, auto);
-    width: 90%;
-    height: 100vh;
-    /*overflow: hidden;*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-/*Specific Styles*/
-.menu ul {
-    box-sizing: border-box;
-    flex-direction: column;
-    gap: 100px;
-}
-.book {
-    flex-direction: column;
-    width: 250px;
-    height: 300px;
-    margin: 40px;
-    padding: 40px;
-}
-.book img {
-    width: 70%;
-    height: 80%;
+.navBar{
+    width: 100%;
+    height: 8vh;
+    justify-content: center;
+    position: absolute;
+    top:0;
 }
 
-/*Effects*/
-.menu ul li:hover {
-    border-bottom: 2px solid white;
-    list-style: none;
+.logo{
+    margin:10px 0 0 60px;
+    cursor: pointer;
+}
+
+.logo a{
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    font-size: 900;
+    transition: 0.5s;
+    text-decoration: none   ;
+}
+
+.logo a:hover{
+    color: white;
+    font-size: 24px;
+
+}
+
+.fa-bars{
+    color: white;
+    font-size: 22px;
+    margin-right: 85px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fa-book{
+    color:rgb(248, 244, 27);
+    font-size: 24px;
+}
+
+.topHeader{
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1700px;
+}
+
+.navB{
+    position: relative;
+    height: 90vh;
+    width: 6%;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.navB::before{
+    content: '';
+    background-color: rgba(248, 244, 27, 0.493);
+    height: 600px;
+    width: 1px;
+    position: absolute;
+    right: 0;
+}
+
+.navB a{
+    color: white;
     text-decoration: none;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.navB a:hover{
+    color: rgb(248, 244, 27);
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home1{
+    display: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    max-width: 1750px;   
+}
+
+.content{
+    margin-right: 230px;
+    position: relative;
+}
+
+.content::after{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.192);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+}
+
+.titleContent{
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleContent h1{
+    color:white;
+    font-weight: 900;
+    font-size:68px;
+    
+}
+
+.btnTitle{
+    font-size: 20px;
+    color: 3c3c3c;
+    border-radius: 10px;
+    background-color: rgb(248, 244, 27);
+    border:none;
+    cursor: pointer;
+    background-size: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.7s;
+}
+
+.btnTitle:hover{
+    background-color: #0c0c0c;
+    color: white;
+    border:1px solid white;
+    padding: 15px 30px;
+    transition: 0.7s;
+}
+
+.homeContent{
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.right{
+    width: 70%;
+    margin-left: 150px;
+}
+
+.options {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 220px; 
+ 
+}
+
+.options a{
+    color:rgba(255, 255, 255, 0.39);
+    text-decoration: none;
+    
+    margin:0 40px;
+    height: 150px;
+}
+
+.options a:hover{
+    color:white;
+    transition: 0.5s;
+}
+
+.options h3{
+   margin-bottom: 20px;
+}
+
+.options h3:hover{
+    transition: 0.5s; 
+    font-weight: 200; 
+}
+
+
+.options p{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.sexi{
+    background-color: white;
+    width: 1280px;
+    transition: 0.5s;
+    height: 65vh;
+    margin-right: 150px;
+}
+
+.worksContent{
+    width: 100%;
+    height: 100%;
 }
