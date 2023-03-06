@@ -61,9 +61,10 @@ function change(documentHtml, contenedor){
 }
 
 render(document.getElementById("right"), homeR);
-change(document.getElementById("home"),homeR);
+/*change(document.getElementById("home"),homeR);
 change(document.getElementById("works"),worksR);
 change(document.getElementById("about"),aboutR);
 change(document.getElementById("contact"),contactR);
 change(document.getElementById("hireUs"),hireUsR);
 
+*/

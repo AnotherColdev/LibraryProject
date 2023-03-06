@@ -5,6 +5,8 @@ let books = []
 //global constants
 const bookSection = document.getElementById('bookSection')
 
+//Events
+
 //Class constructor
 class Book{
     constructor(title, imagen, synopsis){
